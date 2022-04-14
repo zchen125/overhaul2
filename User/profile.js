@@ -1,3 +1,8 @@
+function profilejs(){
+    alert('profile js works!')
+}
+profilejs();
+
 function readCookie(name) {
     let key = name + "=";
     let cookies = document.cookie.split(';');
@@ -22,7 +27,7 @@ axios.get('https://sheetdb.io/api/v1/0fjcjli9h840i')
 
             console.log(users[i]);
 
-            var uname = document.getElementsByTagName('info_username')[1];
+            var uname = document.getElementsByTagName('p')[1];
             celltext = document.createTextNode(users[i].Username)
             uname.appendChild(celltext);
 
