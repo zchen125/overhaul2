@@ -1,0 +1,140 @@
+<!------------------- Navbar & Layout ----------------->
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <title>DuckSource</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- CSS --- importing bootstrap --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+
+  <!-- JS --- importing bootstrap --->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <!--------------------------------------------------------------------------------------------------START OF NAV MENU --------->
+    <div class="fixed-top">
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+       <div><span class="navbar-toggler-icon"></span>
+        <span class="fs-4" style="color: #9acd32;">DuckSource</span></div>
+      </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent" align="left" style="position: absolute; z-index: 2;">
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <span class="fs-6"><i>A free resource for studying</i></span>
+            </a>
+            <hr>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-toggle="collapse" data-target="#home-collapse" aria-expanded="false">
+                <span class="link-light rounded">Home</span>
+              </button>
+              <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../Home/home.html" class="link-light rounded">Overview</a></li>
+                  <li><a href="../Home/about.html" class="link-light rounded">About</a></li>
+                  <li><a href="../Home/default.html" class="link-light rounded">Contact Us</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-toggle="collapse" data-target="#courses-collapse" aria-expanded="false">
+                <span class="link-light rounded">Courses</span>
+              </button>
+              <div class="collapse" id="courses-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../Courses/math.html" class="link-light rounded">Math</a></li>
+                  <li><a href="../Courses/science.html" class="link-light rounded">Science</a></li>
+                  <li><a href="../Courses/engineering.html" class="link-light rounded">Engineering</a></li>
+                  <li><a href="../Courses/humanities.html" class="link-light rounded">Humanities</a></li>
+                  <li><a href="../Courses/business.html" class="link-light rounded">Business</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-toggle="collapse" data-target="#resources-collapse" aria-expanded="false">
+                <span class="link-light rounded">Resources</span>
+              </button>
+              <div class="collapse" id="resources-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../Resources/studying.html" class="link-light rounded">Studying</a></li>
+                  <li><a href="../Resources/exam.html" class="link-light rounded">Exam</a></li>
+                  <li><a href="../Resources/homework.html" class="link-light rounded">Homework</a></li>
+                  <li><a href="../Resources/collaboration.html" class="link-light rounded">Collaboration</a></li>
+                  <li><a href="../Resources/jobs.html" class="link-light rounded">Internship & Jobs</a></li>
+                  <li><a href="../Resources/college.html" class="link-light rounded">College</a></li>
+                  <li><a href="../Resources/softwaretools.html" class="link-light rounded">Software Tools</a></li>
+                  <li><a href="../Resources/youtube.html" class="link-light rounded">Youtube Videos & Podcasts</a></li>
+                  <li><a href="../Resources/research.html" class="link-light rounded">Research</a></li>
+                  <li><a href="../Resources/writing.html" class="link-light rounded">Writing</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-------------- Account Dropdown 2 -------------------->
+            <hr>
+            <div class="dropdown">
+              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Username</strong>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">My Courses</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--------------------------------------------------------------------------------------------------END OF NAV MENU ----------------------------->
+        
+        <div style="position: relative; z-index: 1;">
+          
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators">
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="overflow:hidden">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="https://firstyearsuccess.files.wordpress.com/2020/09/coverphoto.jpg" class="static" style="max-width: 100%; height: auto; filter: blur(4px); filter: brightness(50%);">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>DuckSource</h1>
+                    <p>Providing you with free resources to succeed.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" style="background-color: #9acd32">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <h1 class = "user" style="color:#6FB3B8; text-align: left; font-size: 25px;">Username: </h1>
+        <p id = 'info'></p>
+
+      
+    
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2022 HTMLites Inc. &middot;</p>
+      </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="profile.js"></script>
+
+    
+  </body>
+</html>

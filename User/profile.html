@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DuckSource</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <center>
+      <h1>DuckSource</h1>
+      <p>DuckSource is a free resource for students to study with!</p>
+    <!-- ----------------- Tab Navigation ------------- - ZC -->
+    <div id="tab" style="display:inline;">
+        <ul class="Buttons">
+          <button onclick="window.location.href = 'homepage.html';" class="dropbtn">Home</button>
+          <button onclick="window.location.href = 'about.html';" class="dropbtn">About</button>
+          <button onclick="window.location.href = 'resources.html';" class="dropbtn">Resources</button>
+          <button onclick="window.location.href = 'contact.html';" class="dropbtn">Contact</button>
+          <button onclick="window.location.href = '../index.html';" id="logout">Logout</button>
+          <button onclick="window.location.href = 'profile.html';" class="dropbtn"><img width="20" height="15" src="https://www.freeiconspng.com/thumbs/profile-icon-png/account-profile-user-icon--icon-search-engine-10.png"/></button>
+        </ul>
+    </div>
+  </center>
+<!---end of tab nav -->
+    
+    <h1>Profile</h1>
+    
+     
+    <div class='content'>
+
+        <h1 class = "user" style="color:#6FB3B8; text-align: left; font-size: 25px;">Username: </h1>
+        <p id = 'info'></p>
+
+        <h1 class = "name" style="color:#6FB3B8; text-align: left; font-size: 25px;">Name: </h1> 
+        <p id = 'info'></p>
+
+        <h1 class = "Email" style="color:#6FB3B8; text-align: left; font-size: 25px;">Email: </h1> 
+        <p id = 'info'></p>
+
+        <h1 class = "major" style="color:#6FB3B8; text-align: left; font-size: 25px;">Major: </h1> 
+        <p id = 'info'></p>
+
+        <!--Between these comments is where the actual body is-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="profile.js"></script>
+    </div>
+    
+
+  </body>
+</html>
