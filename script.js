@@ -1,6 +1,6 @@
 // Copied from previous file
 function cookieAlert(){
-    alert('You need cookies enabled in order to use this website!')
+    alert('You need cookies enabled in order to use this website! (testing 1)')
 }
 cookieAlert();
 
